@@ -52,6 +52,11 @@ The tool:
 ## Example Output
 
 ```
+Updated dequal: ^2.0.2 -> ^2.0.3
+Updated markdown-to-jsx: ^7.1.7 -> ^7.5.0
+Updated sanitize-html: ^2.7.1 -> ^2.13.0
+Updated tslib: ^2.4.0 -> ^2.6.2
+Updated @babel/core: ^7.17.10 -> ^7.24.5
 ✅ Successfully updated package.json with latest installed versions
 
 📜 Comparing with previous git version...
