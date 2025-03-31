@@ -1,8 +1,8 @@
-# Bump Versions
+# Bump and Synchronize Versions
 
 A Node.js CLI tool that automatically updates your `package.json` dependencies to match the versions installed in your `package-lock.json` while maintaining semantic versioning compatibility.
 
-Also checks and shows differences between the current `package.json` and the version in the main branch.
+Also checks and shows differences between the current `package.json` and the version in the `main` branch.
 
 ## Features
 
@@ -15,7 +15,7 @@ Also checks and shows differences between the current `package.json` and the ver
 ## Installation
 
 ```bash
-npm install -g bump-versions
+npm install -g bump-sync-deps
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ npm install -g bump-versions
 Simply run the command in your project directory:
 
 ```bash
-bump-versions
+bump-sync-deps
 ```
 
 The tool will:

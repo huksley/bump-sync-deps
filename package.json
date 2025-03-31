@@ -1,16 +1,16 @@
 {
-  "name": "bump-versions",
+  "name": "bump-sync-deps",
   "version": "1.0.0",
   "main": "index.js",
   "bin": {
-    "bump-versions": "./index.js"
+    "bump-sync-deps": "./index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huksley/bump-versions.git"
+    "url": "git+https://github.com/huksley/bump-sync-deps.git"
   },
-  "bugs": "https://github.com/huksley/bump-versions/issues",
-  "homepage": "https://github.com/huksley/bump-versions",
+  "bugs": "https://github.com/huksley/bump-sync-deps/issues",
+  "homepage": "https://github.com/huksley/bump-sync-deps",
   "author": "Ruslan Gainutdinov",
   "license": "MIT",
   "keywords": [
