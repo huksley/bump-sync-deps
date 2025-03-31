@@ -2,11 +2,24 @@
   "name": "bump-versions",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "bump-versions": "./index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huksley/bump-versions.git"
+  },
+  "bugs": "https://github.com/huksley/bump-versions/issues",
+  "homepage": "https://github.com/huksley/bump-versions",
+  "author": "Ruslan Gainutdinov",
+  "license": "MIT",
+  "keywords": [
+    "dependencies",
+    "git",
+    "version",
+    "major",
+    "minor",
+    "patch"
+  ],
+  "description": "CLI tool that automatically updates your `package.json` dependencies to match the versions installed in your `package-lock.json` while maintaining semantic versioning compatibility."
 }
