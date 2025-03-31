@@ -21,5 +21,7 @@
     "minor",
     "patch"
   ],
-  "description": "CLI tool that automatically updates your `package.json` dependencies to match the versions installed in your `package-lock.json` while maintaining semantic versioning compatibility."
+  "description": "CLI tool that automatically updates your `package.json` dependencies to match the versions installed in your `package-lock.json` while maintaining semantic versioning compatibility.",
+  "dependencies": {},
+  "devDependencies": {}
 }

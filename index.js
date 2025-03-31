@@ -81,7 +81,10 @@ if (fs.existsSync(".git")) {
 
     // Get the previous version of package.json from git,
     // use main branch by default
-    const branch = process.argv[process.argv.length - 1] || "main";
+    const branch = process.argv[2] || "main";
+    if (!branch) {
+      throw new Error("Invalid branch provided");
+    }
     const gitPreviousPackageJson = execSync(`git show ${branch}:package.json`, {
       encoding: "utf8",
       stdio: ["pipe", "pipe", "ignore"], // Ignore stderr to prevent git errors from showing
