@@ -1,5 +1,9 @@
 # Bump and Synchronize Versions
 
+When you apply audit fixes, or install new dependencies, package manager only updates minor updates in `package-lock.json`. This tool will also update `package.json` to match the versions installed in `package-lock.json`.
+
+Additionally, if you made any dependency changes in the local branch against the `main` branch, it will show you the differences between the current `package.json` and the version in the `main` branch.
+
 A Node.js CLI tool that automatically updates your `package.json` dependencies to match the versions installed in your `package-lock.json` while maintaining semantic versioning compatibility.
 
 Also checks and shows differences between the current `package.json` and the version in the `main` branch.
@@ -14,8 +18,10 @@ Also checks and shows differences between the current `package.json` and the ver
 
 ## Installation
 
+Currently only works with npm (and requires `package-lock.json`).
+
 ```bash
-npm install -g bump-sync-deps
+npm install -D bump-sync-deps
 ```
 
 ## Usage
