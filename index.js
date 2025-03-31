@@ -80,10 +80,11 @@ if (fs.existsSync(".git")) {
     logger.info("\n📜 Comparing with previous git version...");
 
     // Get the previous version of package.json from git,
-    // use main branch
-    const gitPreviousPackageJson = execSync("git show main:package.json", {
+    // use main branch by default
+    const branch = process.argv[process.argv.length - 1] || "main";
+    const gitPreviousPackageJson = execSync(`git show ${branch}:package.json`, {
       encoding: "utf8",
-      stdio: ["pipe", "ignore"], // Ignore stderr to prevent git errors from showing
+      stdio: ["pipe", "pipe", "ignore"], // Ignore stderr to prevent git errors from showing
     }).toString();
 
     const previousPackageJson = JSON.parse(gitPreviousPackageJson);
