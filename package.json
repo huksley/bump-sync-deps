@@ -1,6 +1,6 @@
 {
   "name": "bump-sync-deps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "bin": {
     "bump-sync-deps": "./index.js"
